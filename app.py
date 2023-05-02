@@ -19,7 +19,6 @@ def single_upload():
 
 @app.route('/', methods=['GET','POST'])
 def single():
-    data = {}
     empty_directory('Shoe')
     empty_directory('static')
     file = request.files['file']
