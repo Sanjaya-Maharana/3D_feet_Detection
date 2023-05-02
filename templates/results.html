@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 30px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hero {
+	background-image: url('hero.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 100px;
+	color: #fff;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border-radius: 5px;
+	}
+.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		.image-container {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.image-container img {
+			max-width: 100%;
+			max-height: 400px;
+			margin: 20px 0;
+			border: 1px solid #ccc;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		}
+    </style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<div class="image-container">
+				<img src="{{ url_for('static', filename=image_path) }}" alt="Annotated Image">
+				<div class="caption">Annotated Image</div>
+			</div>
+		</section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+		<section>
+			<div class="container">
+				<br>
+				<br>
+				<footer>
+		<p>&copy; 2023  All rights reserved.</p>
+	</footer>
+			</div>
+		</section>
+	</main>
+
+
+</body>
+</html>
